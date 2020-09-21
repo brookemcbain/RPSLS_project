@@ -10,6 +10,7 @@ namespace RPSLS
         string randomObjectCreated;
         public Computer()
         {
+            random = new Random(); 
 
         }
         public override string ChooseGesture()
