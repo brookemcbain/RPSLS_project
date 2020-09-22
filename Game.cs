@@ -53,8 +53,10 @@ namespace RPSLS
             Console.WriteLine("Here are the rules:");
             Console.WriteLine("Rule #1: Player 1 chooses whether they'd like to play against another Player or the computer");
             Console.WriteLine("Rule #2: Choose either Rock, Paper, Scissors, Lizard, or Spock");
-            Console.WriteLine("Rock crushes Scissors and Lizard, Scissors cuts Paper and decapitates Lizard ");
-            Console.WriteLine("Paper covers Rock and disproves Spock, Lizard poisons Spock and eats Paper");
+            Console.WriteLine("Rock crushes Scissors and Lizard");
+            Console.WriteLine("Scissors cuts Paper and decapitates Lizard "); 
+            Console.WriteLine("Paper covers Rock and disproves Spock");
+            Console.WriteLine("Lizard poisons Spock and eats Paper");
             Console.WriteLine("Spock smashes Scissors and vaporizes Rock");
             Console.WriteLine("LET THE BATTLE BEGIN!");
 
