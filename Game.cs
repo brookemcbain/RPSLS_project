@@ -17,11 +17,8 @@ namespace RPSLS
             playerOne = new Human();
         }
 
-        //member methods
-
         public void ChooseGameMode()
-        {
-            //This needs validation
+        { 
             Console.WriteLine("Do you want one player or two? Type '1' or '2':");
             response = Console.ReadLine();
             switch (response)
@@ -46,9 +43,7 @@ namespace RPSLS
 
         public void RunGame()
         {
-            //Intro Section
-            //Greeting/Welcome
-            //Rules
+           
             Console.WriteLine("Welcome to ROCK, PAPER, SCISSORS, LIZARDS, SPOCK! ");
             Console.WriteLine("Here are the rules:");
             Console.WriteLine("Rule #1: Player 1 chooses whether they'd like to play against another Player or the computer");
@@ -60,18 +55,15 @@ namespace RPSLS
             Console.WriteLine("Spock smashes Scissors and vaporizes Rock");
             Console.WriteLine("LET THE BATTLE BEGIN!");
 
-            //Choose game type - PvP or PvComputer
+            
             ChooseGameMode();
 
-            //Optional setup - Choose Rounds? Enter player names?
+           
 
             int playerOnePoints = 0;
             int playerTwoPoints = 0;
 
-            //Gameplay Rounds Section
-            //Display current state of game points
-            //Display gesture options
-            //Player One Chooses a gesture
+           
             for (int games = 0; games <= 3; games++)
             {
 
@@ -218,28 +210,22 @@ namespace RPSLS
                     break;
 
                 }
-                //Display gesture options
-                //Player Two Chooses a gesture
-                //Compare the gestures, decide who wins, winner gets a point
-
-                //Display outcome of round
-                //Utilize a check on points to see if we need another round
-
-
-                //EndGame/Victory Section
-                //Display winner of game
-                //Optionally prompt for a new game
-
-
+                
             }
-
-            //Do we want a Round/Battle class?
-            //Do we want a Gesture class?
-            //Choosing a Gesture - override a method for player or computer?
-            //Players need a point variable
-            //Players need a list of gestures
-            //Players need a "chosen gesture" variable
+            Console.WriteLine("Would you like to play again? Type '1' for yes, type '2' for no");
+            string answer = Console.ReadLine();
+            switch (answer)
+            {
+                case "1":
+                    RunGame(); 
+                    break;
+                case "2":
+                    Console.WriteLine("Have a good day!");
+                    break;
+                default:
+                    break;
+            }
         }
-
+      
     }
 }
